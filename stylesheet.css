@@ -48,10 +48,13 @@ body {
     margin-top: 1.5em;
 }
 
+/*Calendar Page */
+
 .container__calendar {
     height: 80%;
     width: 99%;
     background-color: var(--pale-violet);
+    margin: 0 auto;
 }
 
 .month,
@@ -74,15 +77,16 @@ body {
 }
 
 .month__days {
-    display: flex;
+    display: grid;
     width: 80vw;
     margin: 0 auto;
-    flex-wrap: wrap;
     text-align: left;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
 }
 
 .month__days > p {
-    padding: 3em;
+    padding: .5em .5em 5em .5em;
     
 }
 
@@ -91,3 +95,14 @@ body {
     font-weight: 700;
 } 
 
+.resources__calendarpg {
+    margin-top: 1em;
+    background-color: var(--pale-sky);
+    border-radius: 13px;
+    height: 8em;
+    width: 8em;
+    padding: 2em;
+    border: 1px solid grey;
+    font-size: .6rem;
+    margin: 1 auto 0 auto;
+}
