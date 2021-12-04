@@ -1,6 +1,12 @@
 :root {
     --pale-violet: rgb(247, 169, 247);
     --pale-sky: rgb(151, 223, 252);
+    --light-tomato: #ff000069;
+    --light-orange: #ffa60075;
+    --light-yellow: #ffff0073;
+    --light-green:#0080007e;
+    --light-blue: #0000ff8f;
+    --light-indigo: #4c008280;
 }
 
 * {
@@ -98,6 +104,89 @@ body {
 .resources__calendarpg {
     margin-top: 1em;
     background-color: var(--pale-sky);
+    border-radius: 13px;
+    height: 8em;
+    width: 8em;
+    padding: 2em;
+    border: 1px solid grey;
+    font-size: .6rem;
+    margin: 1 auto 0 auto;
+}
+
+/* Resources & Venues Page */
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.button__wheelchair {
+    background-color: var(--light-tomato);
+    border-style: none;
+    border-radius: 13px;
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+}
+
+.button__bathrooms {
+    background-color: var(--light-orange);
+    border-style: none;
+    border-radius: 13px;
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+}
+
+.button__bipoc {
+    background-color: var(--light-yellow);
+    border-style: none;
+    border-radius: 13px;
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+}
+
+.button__family {
+    background-color: var(--light-green);
+    border-style: none;
+    border-radius: 13px;
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+}
+
+.button__poly {
+    background-color: var(--light-blue);
+    border-style: none;
+    border-radius: 13px;
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+}
+
+.button__accessible {
+    background-color: var(--light-indigo);
+    border-style: none;
+    border-radius: 13px;
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+}
+
+.container__resources {
+    background-color: var(--pale-sky);
+    text-align: left;
+    line-height: 1.5rem;
+    padding: .3em;
+}
+
+.calendar__resourcespg {
+    margin-top: 1em;
+    background-color: var(--pale-violet);
     border-radius: 13px;
     height: 8em;
     width: 8em;
