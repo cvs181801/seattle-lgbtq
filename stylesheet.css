@@ -1,3 +1,8 @@
+:root {
+    --pale-violet: rgb(247, 169, 247);
+    --pale-sky: rgb(151, 223, 252);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +23,7 @@ body {
 }
 
 .resources {
-    background-color: rgb(151, 223, 252);
+    background-color: var(--pale-sky);
     border-radius: 13px;
     height: 10em;
     width: 10em;
@@ -28,7 +33,7 @@ body {
 }
 
 .calendar {
-    background-color: rgb(247, 169, 247);
+    background-color: var(--pale-violet);
     border-radius: 13px;
     height: 10em;
     width: 10em;
@@ -42,4 +47,47 @@ body {
 .calendar > p {
     margin-top: 1.5em;
 }
+
+.container__calendar {
+    height: 80%;
+    width: 99%;
+    background-color: var(--pale-violet);
+}
+
+.month,
+.month__weekdays
+ {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.month__weekdays {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding: 3em;
+
+}
+
+.month__days {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.month__days > p {
+    padding: 3em;
+    
+}
+
+.month__prev,
+.month__next {
+    font-weight: 700;
+} 
 
