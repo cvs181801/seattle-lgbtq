@@ -15,7 +15,6 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    
 }
 
 .resources {
@@ -37,5 +36,10 @@ body {
     margin-right: 2em;
     padding: 2em;
     border: 1px solid grey;
+}
+
+.resources > p,
+.calendar > p {
+    margin-top: 1.5em;
 }
 
