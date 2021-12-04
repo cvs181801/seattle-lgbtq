@@ -4,11 +4,17 @@
     --pale-sky: rgb(151, 223, 252);
     --dark-sky: rgb(17, 63, 82);
     --light-tomato: #ff000069;
+    --dark-tomato: #5c0000;
     --light-orange: #ffa60075;
+    --dark-orange: #8d5c00;
     --light-yellow: #ffff0073;
+    --dark-yellow: #6d6d01;
     --light-green:#0080007e;
+    --dark-green: #003d00;
     --light-blue: #0000ff8f;
+    --dark-blue: #000080;
     --light-indigo: #4c008280;
+    --dark-indigo: #22003a;
 }
 
 * {
@@ -151,7 +157,7 @@ body {
 .buttonsContainer {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 1em auto 1em auto;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -160,61 +166,72 @@ body {
     background-color: var(--light-tomato);
     border-style: none;
     border-radius: 13px;
+    border: 1px solid var(--dark-tomato);
     padding: .5em;
     font-family: inherit;
     margin: .3em;
+    cursor: pointer;
 }
 
 .button__bathrooms {
     background-color: var(--light-orange);
     border-style: none;
     border-radius: 13px;
+    border: 1px solid var(--dark-orange);
     padding: .5em;
     font-family: inherit;
     margin: .3em;
+    cursor: pointer;
 }
 
 .button__bipoc {
     background-color: var(--light-yellow);
     border-style: none;
     border-radius: 13px;
+    border: 1px solid var(--dark-yellow);
     padding: .5em;
     font-family: inherit;
     margin: .3em;
+    cursor: pointer;
 }
 
 .button__family {
     background-color: var(--light-green);
     border-style: none;
     border-radius: 13px;
+    border: 1px solid var(--dark-green);
     padding: .5em;
     font-family: inherit;
     margin: .3em;
+    cursor: pointer;
 }
 
 .button__poly {
     background-color: var(--light-blue);
     border-style: none;
     border-radius: 13px;
+    border: 1px solid var(--dark-blue);
     padding: .5em;
     font-family: inherit;
     margin: .3em;
+    cursor: pointer;
 }
 
 .button__accessible {
     background-color: var(--light-indigo);
     border-style: none;
     border-radius: 13px;
+    border: 1px solid var(--dark-indigo);
     padding: .5em;
     font-family: inherit;
     margin: .3em;
+    cursor: pointer;
 }
 
 .container__resources {
     background-color: var(--pale-sky);
     text-align: left;
     line-height: 1.5rem;
-    padding: .3em;
 }
 
 .calendar__resourcespg {
