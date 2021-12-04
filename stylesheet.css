@@ -1,6 +1,8 @@
 :root {
     --pale-violet: rgb(247, 169, 247);
+    --dark-violet: rgb(75, 30, 75);
     --pale-sky: rgb(151, 223, 252);
+    --dark-sky: rgb(17, 63, 82);
     --light-tomato: #ff000069;
     --light-orange: #ffa60075;
     --light-yellow: #ffff0073;
@@ -16,7 +18,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Readex Pro', sans-serif;
     margin: 0 auto;
     text-align: center;
 }
@@ -52,6 +54,22 @@ body {
 .resources > p,
 .calendar > p {
     margin-top: 1.5em;
+}
+
+.resources--p > a:link,
+.resources--p > a:visited,
+.calendar--p > a:link,
+.calendar--p > a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.resources--p > a:hover {
+    color: var(--dark-sky);
+}
+
+.calendar--p > a:hover {
+    color:var(--dark-violet);
 }
 
 /*Calendar Page */
@@ -102,7 +120,7 @@ body {
 } 
 
 .resources__calendarpg {
-    margin-top: 1em;
+    margin: 1em;
     background-color: var(--pale-sky);
     border-radius: 13px;
     height: 8em;
@@ -111,6 +129,21 @@ body {
     border: 1px solid grey;
     font-size: .6rem;
     margin: 1 auto 0 auto;
+    text-align: center;
+}
+
+.resources__calendarpg--p {
+    margin-top: .2em;
+}
+
+.resources__calendarpg--p > a:link,
+.resources__calendarpg--p > a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.resources__calendarpg--p > a:hover {
+    color: var(--dark-sky);
 }
 
 /* Resources & Venues Page */
@@ -193,5 +226,20 @@ body {
     padding: 2em;
     border: 1px solid grey;
     font-size: .6rem;
-    margin: 1 auto 0 auto;
+    margin: 1em;
+    text-align: center;
+}
+
+.calendar__resourcespg--p {
+    margin-top: 1em;
+}
+
+.calendar__resourcespg--p > a:link,
+.calendar__resourcespg--p > a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.calendar__resourcespg--p > a:hover {
+    color: var(--dark-violet);
 }
