@@ -109,7 +109,7 @@ body {
 
 .month__days {
     display: grid;
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
     text-align: left;
     grid-template-columns: minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em);
@@ -119,6 +119,7 @@ body {
 .month__days > p {
     padding: .5em .5em 5em .5em;
     border: 1px solid black; 
+    font-size: .7rem;
 }
 
 .month__prev,
