@@ -2,6 +2,11 @@ const daysInMonth = document.querySelectorAll('.days');
 const resourcesList = document.querySelector('.resourcesList');
 const wheelchairBtn = document.querySelector('.button__wheelchair');
 const viewAllBtn = document.querySelector('.button__all');
+const bathroomsBtn = document.querySelector('.button__bathrooms');
+const bipocBtn = document.querySelector('.button__bipoc');
+const familyBtn = document.querySelector('.button__family');
+const polyBtn = document.querySelector('.button__poly');
+const otherAccesibleBtn = document.querySelector('.button__accessible');
 
 console.log(daysInMonth);
 
@@ -162,4 +167,34 @@ wheelchairBtn.addEventListener("click", function(event) {
         newResource.append(newDescription);
     })
 
+})
+
+bathroomsBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    resourcesList.innerText = `Check back for more content soon!`;
+})
+
+bipocBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    resourcesList.innerText = `Check back for more content soon!`;
+})
+
+familyBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    resourcesList.innerText = `Check back for more content soon!`;
+})
+
+polyBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    resourcesList.innerText = `Check back for more content soon!`;
+})
+
+otherAccesibleBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    resourcesList.innerText = `Check back for more content soon!`;
 })
