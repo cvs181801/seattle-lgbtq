@@ -1,4 +1,6 @@
 const daysInMonth = document.querySelectorAll('.days');
+const resourcesList = document.querySelector('.resourcesList');
+const wheelchairBtn = document.querySelector('.button__wheelchair');
 
 console.log(daysInMonth);
 
@@ -59,7 +61,7 @@ const resources = [
         "address": "5401 17TH AVE NW, Seattle",
         "type": "Vegan doughnut shop",
         "lgbtqFriendly": true,
-        "wheelchairAccess": false,
+        "wheelchairAccess": true,
         "description": "Seattle vegans have lost their collective mind for this new food truck, which parks outside the Ballard outpost of Cycle Dogs to sling photogenic doughnuts in flavors like french toast and rose petal. Owners Christopher Ballard and Sean Willis, also the couple behind plant-based magazine Outbound Herbivore, are equally sweet."
     },
     {
@@ -106,8 +108,36 @@ const resources = [
     }
 ]
 
-console.log(resources[0].lgbtqFriendly)
+console.log(resources[0])
 
- console.log(resources.filter((item, index, array) => {
-    array[index].lgbtqFriendly == true;
- }))
+const newArray = resources.filter((object) => {
+    return object.wheelchairAccess == true;
+ })
+
+wheelchairBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    // resourceTitle.innerText = '';
+    // let resourceTitle = document.createElement('h1');
+    // resourceTitle.innerText = `Wheelchair Accessible Resources`;
+    // resourcesList.append(resourceTitle);
+    newArray.forEach(object => {
+        let newResource = document.createElement('div');
+        resourcesList.append(newResource);
+        newResource.style.border = "1px solid rgb(17, 63, 82)";
+        newResource.style.padding = "1em";
+        let newCompanyName = document.createElement('p');
+        let newAddress = document.createElement('p');
+        let newType = document.createElement('p');
+        let newDescription = document.createElement('p');
+        newCompanyName.innerText = `${object.company}`
+        newAddress.innerText = `${object.address}`
+        newType.innerText = `${object.type}`
+        newDescription.innerText = `${object.description}`
+        newResource.append(newCompanyName);
+        newResource.append(newAddress);
+        newResource.append(newType);
+        newResource.append(newDescription);
+    })
+
+})
