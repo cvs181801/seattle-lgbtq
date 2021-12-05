@@ -1,7 +1,7 @@
 const daysInMonth = document.querySelectorAll('.days');
 const resourcesList = document.querySelector('.resourcesList');
 const wheelchairBtn = document.querySelector('.button__wheelchair');
-const viewAllResourcesStart = document.querySelector('.resourcesList--p');
+const viewAllBtn = document.querySelector('.button__all');
 
 console.log(daysInMonth);
 
@@ -109,7 +109,28 @@ const resources = [
     }
 ]
 
-
+viewAllBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    resourcesList.innerText = '';
+    resources.forEach(object => {
+        let newResource = document.createElement('div');
+        resourcesList.append(newResource);
+        newResource.style.border = "1px solid rgb(17, 63, 82)";
+        newResource.style.padding = "1em";
+        let newCompanyName = document.createElement('p');
+        let newAddress = document.createElement('p');
+        let newType = document.createElement('p');
+        let newDescription = document.createElement('p');
+        newCompanyName.innerText = `${object.company}`
+        newAddress.innerText = `${object.address}`
+        newType.innerText = `${object.type}`
+        newDescription.innerText = `${object.description}`
+        newResource.append(newCompanyName);
+        newResource.append(newAddress);
+        newResource.append(newType);
+        newResource.append(newDescription);
+    })
+})
 
 const newArray = resources.filter((object) => {
     return object.wheelchairAccess == true;

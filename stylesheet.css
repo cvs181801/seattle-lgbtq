@@ -15,6 +15,7 @@
     --dark-blue: #000080;
     --light-indigo: #4c008280;
     --dark-indigo: #22003a;
+    --light-brown: rgba(78, 38, 25, 0.479);
 }
 
 * {
@@ -160,6 +161,17 @@ body {
     margin: 1em auto 1em auto;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.button__all {
+    background-color: var(--light-brown);
+    border-style: none;
+    border-radius: 13px;
+    border: 1px solid var(--dark-tomato);
+    padding: .5em;
+    font-family: inherit;
+    margin: .3em;
+    cursor: pointer;
 }
 
 .button__wheelchair {
