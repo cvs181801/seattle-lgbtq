@@ -1,6 +1,7 @@
 const daysInMonth = document.querySelectorAll('.days');
 const resourcesList = document.querySelector('.resourcesList');
 const wheelchairBtn = document.querySelector('.button__wheelchair');
+const viewAllResourcesStart = document.querySelector('.resourcesList--p');
 
 console.log(daysInMonth);
 
@@ -108,7 +109,7 @@ const resources = [
     }
 ]
 
-console.log(resources[0])
+
 
 const newArray = resources.filter((object) => {
     return object.wheelchairAccess == true;
