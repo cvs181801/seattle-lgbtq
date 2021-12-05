@@ -112,7 +112,7 @@ body {
     width: 90vw;
     margin: 0 auto;
     text-align: left;
-    grid-template-columns: minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em);
+    grid-template-columns: minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em) minmax(10em, 30em);
 
 }
 
